@@ -75,6 +75,15 @@ export default function Order() {
             <p className="text-center text-lg mb-6 opacity-90">
               Average delivery time: 20-35 minutes
             </p>
+            <p className="text-center mb-8 opacity-90">
+              Days of Operation: Monday & Thursday, Evening.
+            </p>
+            <p className="text-center mb-8 opacity-90">
+              Tuesday & Wednesday, 11:00 AM.
+            </p>
+           <p className="text-center mb-8 opacity-90">
+              Friday to Sunday, 11:00 AM - 10:00 PM.
+           </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2">30 min</div>
