@@ -79,7 +79,7 @@ export default function Order() {
               Days of Operation: Monday & Thursday, Evening.
             </p>
             <p className="text-center mb-8 opacity-90">
-              Tuesday, 11:00 AM.
+              Tuesday, 11:00 AM - 10:00 PM.
             </p>
            <p className="text-center mb-8 opacity-90">
               Friday to Sunday, 11:00 AM - 10:00 PM.
