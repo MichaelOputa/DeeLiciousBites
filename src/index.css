@@ -5,6 +5,8 @@
 @layer base {
   body {
     @apply font-sans antialiased;
+    color: #241a18;
+    background: #fff8f1;
   }
 }
 
@@ -25,4 +27,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  background: #b90d0d;
+  color: #ffffff;
 }
