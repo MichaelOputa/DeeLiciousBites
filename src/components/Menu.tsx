@@ -6,7 +6,6 @@ export default function Menu() {
 
   const categories = [
     { id: 'local', label: 'Local Dishes', icon: '🍛' },
-    { id: 'snacks', label: 'Snacks & Small Chops', icon: '🍢' },
     { id: 'pastries', label: 'Pastries', icon: '🍰' },
     {id: 'soup', label: 'Soup', icon: '🍲'},
     {id: 'protein', label: 'Protein', icon: '🍖'},
