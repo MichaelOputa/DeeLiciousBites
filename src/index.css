@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color: #f8f2e5;
+    background: #0b0b0a;
+  }
+
   body {
     @apply font-sans antialiased;
-    color: #241a18;
-    background: #fff8f1;
+    color: #f8f2e5;
+    background: #0b0b0a;
   }
-}
+} 
 
 @layer utilities {
   .animate-bounce-slow {
@@ -30,6 +35,6 @@ html {
 }
 
 ::selection {
-  background: #b90d0d;
-  color: #ffffff;
+  background: #f4c430;
+  color: #0b0b0a;
 }

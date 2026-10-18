@@ -5,23 +5,23 @@ export default function Order() {
   const whatsappMessage = encodeURIComponent('Hi! I would like to place an order from DeeLicious BITES.');
 
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-red-50">
+    <section className="py-20 bg-[#11110f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Order <span className="text-orange-600">Now</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#fff8e8] mb-4">
+            Order <span className="text-[#f4c430]">Now</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#f4c430] to-[#c94b1c] mx-auto mb-6"></div>
+          <p className="text-xl text-[#c5bdad] max-w-3xl mx-auto">
             Get your favorite meals delivered hot and fresh to your doorstep
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-12">
+          <div className="bg-[#171715] border border-[#5f4910] rounded-3xl shadow-2xl p-8 md:p-12 mb-12">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Quick Order via WhatsApp</h3>
-              <p className="text-gray-600">
+              <h3 className="text-2xl font-bold text-[#fff8e8] mb-4">Quick Order via WhatsApp</h3>
+              <p className="text-[#c5bdad]">
                 Click the button below to chat with us directly on WhatsApp and place your order
               </p>
             </div>
@@ -36,14 +36,14 @@ export default function Order() {
               <span>Order via WhatsApp</span>
             </a>
           </div>
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="bg-[#171715] border border-[#5f4910] rounded-2xl shadow-lg p-8">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="p-4 bg-orange-100 rounded-full">
-                  <CreditCard className="text-orange-600" size={28} />
+                <div className="p-4 bg-[#382b0b] rounded-full">
+                  <CreditCard className="text-[#f4c430]" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Payment Options</h3>
+                <h3 className="text-xl font-bold text-[#fff8e8]">Payment Options</h3>
               </div>
-              <ul className="space-y-3 text-gray-700">
+              <ul className="space-y-3 text-[#d8d0c0]">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                   Bank Transfer
@@ -57,7 +57,7 @@ export default function Order() {
                   USSD Payment
                 </li>
               </ul>
-              <div className="mt-6 p-4 bg-green-50 rounded-xl">
+              <div className="mt-6 p-4 bg-[#10251b] rounded-xl">
                 <p className="text-sm text-green-800 font-medium">
                   ✓ Secure payments guaranteed
                 </p>
@@ -65,7 +65,7 @@ export default function Order() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-3xl shadow-2xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-[#f4c430] to-[#c94b1c] rounded-3xl shadow-2xl p-8 md:p-12 text-white">
             <div className="flex items-center justify-center mb-6">
               <Bike size={48} />
             </div>
@@ -100,9 +100,9 @@ export default function Order() {
             </div>
           </div>
 
-          <div className="mt-12 bg-yellow-50 border-2 border-yellow-400 rounded-2xl p-6">
-            <h4 className="font-bold text-gray-900 mb-3 text-lg">🎉 Event Catering Available!</h4>
-            <p className="text-gray-700">
+          <div className="mt-12 bg-[#241d11] border-2 border-[#f4c430] rounded-2xl p-6">
+            <h4 className="font-bold text-[#fff8e8] mb-3 text-lg">🎉 Event Catering Available!</h4>
+            <p className="text-[#d8d0c0]">
               Planning a party, wedding, or corporate event? We offer professional catering services
               for all occasions. Contact us on WhatsApp for custom packages and bulk orders.
             </p>

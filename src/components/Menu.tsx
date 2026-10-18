@@ -12,14 +12,14 @@ export default function Menu() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-[#0b0b0a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="text-orange-600">Menu</span>
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#fff8e8] mb-4">
+            Our <span className="text-[#f4c430]">Menu</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#f4c430] to-[#c94b1c] mx-auto mb-6"></div>
+          <p className="text-xl text-[#c5bdad] max-w-3xl mx-auto">
             Explore our delicious selection of authentic Nigerian and continental dishes
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Menu() {
               onClick={() => setActiveCategory(category.id)}
               className={`px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 ${
                 activeCategory === category.id
-                  ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-[#f4c430] to-[#c94b1c] text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-orange-50 shadow-md'
               }`}
             >
@@ -51,7 +51,7 @@ export default function Menu() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+                className="bg-[#151513] border border-[#5f4910] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:border-[#f4c430] transform hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="relative h-56 overflow-hidden">
                   <img
@@ -60,20 +60,20 @@ export default function Menu() {
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   {"popular" in item && item.popular && (
-                    <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    <div className="absolute top-4 right-4 bg-[#c94b1c] text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                       Popular
                     </div>
                   )}
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.name}</h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{item.description}</p>
+                  <h3 className="text-xl font-bold text-[#fff8e8] mb-2">{item.name}</h3>
+                  <p className="text-[#c5bdad] mb-4 text-sm leading-relaxed">{item.description}</p>
 
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-orange-600">{item.price}</span>
+                    <span className="text-2xl font-bold text-[#f4c430]">{item.price}</span>
                     
                   </div>
                 </div>
