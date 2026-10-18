@@ -1,4 +1,4 @@
-import { MessageCircle, CreditCard, Bike } from 'lucide-react';
+import { MessageCircle, CreditCard, CalendarDays } from 'lucide-react';
 
 export default function Order() {
   const whatsappNumber = '+2348140192298';
@@ -67,37 +67,17 @@ export default function Order() {
 
           <div className="bg-gradient-to-r from-[#f4c430] to-[#c94b1c] rounded-3xl shadow-2xl p-8 md:p-12 text-white">
             <div className="flex items-center justify-center mb-6">
-              <Bike size={48} />
+              <CalendarDays size={48} />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-4">
-              Fast & Reliable Delivery
+              Order & Delivery Schedule
             </h3>
-            <p className="text-center text-lg mb-6 opacity-90">
-              Average delivery time: 20-35 minutes
+            <p className="text-center text-lg mb-4 opacity-95">
+              Order will be taken from Monday to Thursday.
             </p>
-            <p className="text-center mb-8 opacity-90">
-              Days of Operation: Monday & Thursday, Evening.
+            <p className="text-center text-lg opacity-95">
+              Delivery is Friday, Saturday and Sunday.
             </p>
-            <p className="text-center mb-8 opacity-90">
-              Tuesday, 11:00 AM - 10:00 PM.
-            </p>
-           <p className="text-center mb-8 opacity-90">
-              Friday to Sunday, 11:00 AM - 10:00 PM.
-           </p>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-4xl font-bold mb-2">30 min</div>
-                <p className="text-sm opacity-90">Average Delivery</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">100%</div>
-                <p className="text-sm opacity-90">Fresh & Hot</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">12 Hours</div>
-                <p className="text-sm opacity-90">Customer Support</p>
-              </div>
-            </div>
           </div>
 
           <div className="mt-12 bg-[#241d11] border-2 border-[#f4c430] rounded-2xl p-6">
