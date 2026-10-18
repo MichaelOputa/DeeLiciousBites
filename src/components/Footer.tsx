@@ -2,15 +2,16 @@ import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-black text-white">
+    <footer className="bg-[#171313] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                DB
-              </div>
-              <span className="ml-2 text-xl font-bold">DeeLicious BITES</span>
+            <div className="inline-flex items-center mb-4 rounded-2xl bg-[#171313] px-4 py-2">
+              <img
+                src="/DeeLicious_BITES-removebg-preview.png"
+                alt="DeeLicious BITES"
+                className="h-20 w-40 object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Bringing you the authentic taste of Nigerian cuisine with a modern twist.
