@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { MessageCircle } from 'lucide-react';
 import { menuData } from '../data/menuData';
 
 export default function Menu() {
   const [activeCategory, setActiveCategory] = useState('local');
+  const whatsappNumber = '+2348140192298';
 
   const categories = [
     { id: 'local', label: 'Local Dishes', icon: '🍛' },
@@ -32,7 +34,7 @@ export default function Menu() {
               className={`px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105 ${
                 activeCategory === category.id
                   ? 'bg-gradient-to-r from-[#f4c430] to-[#c94b1c] text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-orange-50 shadow-md'
+                  : 'bg-[#171715] text-[#f8f2e5] border border-[#6e5410] hover:bg-[#241d11] shadow-md'
               }`}
             >
               <span className="mr-2">{category.icon}</span>
@@ -72,9 +74,17 @@ export default function Menu() {
                   <h3 className="text-xl font-bold text-[#fff8e8] mb-2">{item.name}</h3>
                   <p className="text-[#c5bdad] mb-4 text-sm leading-relaxed">{item.description}</p>
 
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between gap-4">
                     <span className="text-2xl font-bold text-[#f4c430]">{item.price}</span>
-                    
+                    <a
+                      href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I would like to order ${item.name} (${item.price}) from DeeLicious BITES.`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#f4c430] px-4 py-2 text-sm font-bold text-[#0b0b0a] transition-all hover:scale-105 hover:bg-[#ffd95a] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f4c430] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151513]"
+                    >
+                      <MessageCircle size={16} />
+                      Order
+                    </a>
                   </div>
                 </div>
               </div>
