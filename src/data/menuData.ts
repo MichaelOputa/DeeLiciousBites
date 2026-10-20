@@ -3,20 +3,20 @@ export const menuData = {
     {
       name: 'Jollof Rice, Chicken & Plantain',
       description: 'A classic Nigerian jollof rice dish served with tender chicken and sweet fried plantain',
-      price: '₦4,000',
+      price: '₦3,000',
       image: 'jollof, chicken and plantain.png',
       popular: true,
     },
     {
       name: 'Fried Rice, Chicken & Plantain',
       description: 'A flavorful fried rice dish served with tender chicken and sweet fried plantain',
-      price: '₦3,500',
+      price: '₦3,000',
       image: 'fried rice, chicken and plantain.jpg',
     },
     {
       name: 'White Rice & Stew with Chicken/Plantain',
       description: 'Steamed white rice served with a rich tomato stew, tender chicken, and fried plantain',
-      price: '₦3,000',
+      price: '₦2,500',
       image: 'white rice, stew, chicken and plantain.jpg',
     }
   ],
