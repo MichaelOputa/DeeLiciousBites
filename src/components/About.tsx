@@ -44,9 +44,9 @@ export default function About() {
               Whether you're craving authentic Nigerian delicacies or exploring pastry flavors, we're here to deliver an unforgettable culinary experience right to your doorstep.
             </p>
 
-            <div className="flex items-center space-x-3 bg-[#241d11] p-4 rounded-xl">
-              <Heart className="text-[#f4c430]" size={32} />
-              <p className="text-gray-800 font-medium italic">
+            <div className="flex items-center space-x-3 bg-[#241d11] p-4 rounded-xl border border-[#5f4910]/40">
+              <Heart className="text-[#f4c430] shrink-0" size={28} />
+              <p className="text-[#fff8e8] font-medium italic">
                 "Cooking is love made visible, and we pour our hearts into every plate."
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function About() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow">
+          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow border border-[#3e341c]/50">
             <div className="inline-block p-4 bg-[#0b0b0a] rounded-full mb-4 shadow-md">
               <Award className="text-[#f4c430]" size={32} />
             </div>
@@ -62,7 +62,7 @@ export default function About() {
             <p className="text-[#c5bdad]">Only the finest ingredients make it to your plate</p>
           </div>
 
-          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow">
+          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow border border-[#3e341c]/50">
             <div className="inline-block p-4 bg-[#0b0b0a] rounded-full mb-4 shadow-md">
               <Users className="text-[#f4c430]" size={32} />
             </div>
@@ -70,7 +70,7 @@ export default function About() {
             <p className="text-[#c5bdad]">Skilled professional with years of experience</p>
           </div>
 
-          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow">
+          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow border border-[#3e341c]/50">
             <div className="inline-block p-4 bg-[#0b0b0a] rounded-full mb-4 shadow-md">
               <Clock className="text-[#f4c430]" size={32} />
             </div>
@@ -78,7 +78,7 @@ export default function About() {
             <p className="text-[#c5bdad]">Hot, fresh meals delivered right on time</p>
           </div>
 
-          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow">
+          <div className="text-center p-6 bg-gradient-to-br from-[#19160f] to-[#211511] rounded-2xl hover:shadow-lg transition-shadow border border-[#3e341c]/50">
             <div className="inline-block p-4 bg-[#0b0b0a] rounded-full mb-4 shadow-md">
               <Heart className="text-[#f4c430]" size={32} />
             </div>

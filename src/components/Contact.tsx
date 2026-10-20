@@ -1,6 +1,7 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export default function Contact() {
 
@@ -45,7 +46,7 @@ export default function Contact() {
                   href="tel:+2348140192298"
                   className="flex items-start space-x-4 p-4 rounded-xl hover:bg-[#241d11] transition-colors group"
                 >
-                  <div className="p-3 bg-[#382b0b] rounded-full group-hover:bg-[#594512] transition-colors">
+                  <div className="p-3 bg-[#382b0b] rounded-full group-hover:bg-[#594512] transition-colors shrink-0">
                     <Phone className="text-[#f4c430]" size={24} />
                   </div>
                   <div>
@@ -56,13 +57,13 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="https://wa.me/+2348140192298"
+                  href="https://wa.me/2348140192298"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start space-x-4 p-4 rounded-xl hover:bg-green-50 transition-colors group"
+                  className="flex items-start space-x-4 p-4 rounded-xl hover:bg-[#15271b] transition-colors group"
                 >
-                  <div className="p-3 bg-green-100 rounded-full group-hover:bg-green-200 transition-colors">
-                    <MessageCircle className="text-green-600" size={24} />
+                  <div className="p-2.5 bg-[#122e1b] rounded-full group-hover:bg-[#183d25] transition-colors shrink-0">
+                    <WhatsAppIcon className="w-7 h-7" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#fff8e8] mb-1">WhatsApp</h4>
@@ -75,7 +76,7 @@ export default function Contact() {
                   href="mailto:joseph.o.adeola@gmail.com"
                   className="flex items-start space-x-4 p-4 rounded-xl hover:bg-[#241d11] transition-colors group"
                 >
-                  <div className="p-3 bg-[#382b0b] rounded-full group-hover:bg-[#594512] transition-colors">
+                  <div className="p-3 bg-[#382b0b] rounded-full group-hover:bg-[#594512] transition-colors shrink-0">
                     <Mail className="text-[#f4c430]" size={24} />
                   </div>
                   <div>
@@ -86,12 +87,23 @@ export default function Contact() {
                 </a>
 
                 <div className="flex items-start space-x-4 p-4 rounded-xl">
-                  <div className="p-3 bg-[#382b0b] rounded-full">
+                  <div className="p-3 bg-[#382b0b] rounded-full shrink-0 mt-1">
                     <MapPin className="text-[#f4c430]" size={24} />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-[#fff8e8] mb-1">Location</h4>
-                    <p className="text-[#c5bdad]">MayFair Roundabout</p>
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-[#fff8e8] mb-1">Our Locations</h4>
+                    <div>
+                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-0.5">Lagos Location</p>
+                      <p className="text-[#c5bdad] text-sm leading-relaxed">
+                        4, Prince Adeleke Close, Ikosi Ketu, Lagos
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-0.5">Ile-Ife Location</p>
+                      <p className="text-[#c5bdad] text-sm leading-relaxed">
+                        Solar close, Mayfair Roundabout, Mayfair, Ile Ife, Osun State
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -127,7 +139,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="from_name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 bg-[#0e0e0d] text-white border border-[#443818] rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all placeholder:text-gray-500"
                   placeholder="Your name"
                 />
               </div>
@@ -140,7 +152,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="reply_to"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 bg-[#0e0e0d] text-white border border-[#443818] rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all placeholder:text-gray-500"
                   placeholder="your@email.com"
                 />
               </div>
@@ -153,7 +165,7 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 bg-[#0e0e0d] text-white border border-[#443818] rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all placeholder:text-gray-500"
                   placeholder="+234"
                 />
               </div>
@@ -166,21 +178,21 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 bg-[#0e0e0d] text-white border border-[#443818] rounded-xl focus:ring-2 focus:ring-[#f4c430] focus:border-transparent outline-none transition-all resize-none placeholder:text-gray-500"
                   placeholder="Tell us how we can help you..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#f4c430] to-[#c94b1c] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all"
+                className="w-full bg-gradient-to-r from-[#f4c430] to-[#c94b1c] text-[#0b0b0a] font-bold px-8 py-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 Send Message
               </button>
             </form>
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 }

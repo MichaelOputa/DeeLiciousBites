@@ -14,10 +14,14 @@ export default function Hero({ onNavigate }: HeroProps) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <div className="w-56 h-40 sm:w-72 sm:h-52 bg-[#171313] rounded-[2rem] flex items-center justify-center shadow-2xl animate-bounce-slow px-5">
-              <img src="/DeeLicious_BITES-removebg-preview.png" alt="DeeLicious BITES logo" className="w-full h-full object-contain" />
-            </div>
+          <div className="relative flex items-center justify-center">
+            {/* Soft ambient warm glow behind the logo so it seamlessly integrates with the dark theme */}
+            <div className="absolute -inset-6 bg-gradient-to-r from-[#f4c430]/20 via-[#c94b1c]/20 to-transparent blur-3xl rounded-full pointer-events-none"></div>
+            <img
+              src="/DeeLicious_BITES-removebg-preview.png"
+              alt="DeeLicious BITES logo"
+              className="relative w-64 h-auto sm:w-80 object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] animate-bounce-slow"
+            />
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MessageCircle } from 'lucide-react';
+import { WhatsAppGlyph } from './WhatsAppIcon';
 import { menuData } from '../data/menuData';
 
 export default function Menu() {
@@ -9,8 +9,8 @@ export default function Menu() {
   const categories = [
     { id: 'local', label: 'Local Dishes', icon: '🍛' },
     { id: 'pastries', label: 'Pastries', icon: '🍰' },
-    {id: 'soup', label: 'Soup', icon: '🍲'},
-    {id: 'protein', label: 'Protein', icon: '🍖'},
+    { id: 'soup', label: 'Soup', icon: '🍲' },
+    { id: 'protein', label: 'Protein', icon: '🍖' },
   ];
 
   return (
@@ -82,7 +82,7 @@ export default function Menu() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full bg-[#f4c430] px-4 py-2 text-sm font-bold text-[#0b0b0a] transition-all hover:scale-105 hover:bg-[#ffd95a] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f4c430] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151513]"
                     >
-                      <MessageCircle size={16} />
+                      <WhatsAppGlyph className="w-4 h-4 text-[#0b0b0a]" />
                       Order
                     </a>
                   </div>

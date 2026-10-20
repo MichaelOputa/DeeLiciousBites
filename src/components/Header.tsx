@@ -25,17 +25,17 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 bg-[#0b0b0a]/95 backdrop-blur-md shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           <button
             type="button"
-            className="flex items-center cursor-pointer rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f4c430] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171313]"
+            className="flex items-center cursor-pointer rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f4c430] focus-visible:ring-offset-2 focus-visible:ring-offset-[#171313] transition-transform hover:scale-105"
             onClick={() => handleClick('home')}
             aria-label="Go to DeeLicious BITES home"
           >
             <img
               src="/DeeLicious_BITES-removebg-preview.png"
               alt="DeeLicious BITES"
-              className="h-16 w-32 object-contain object-left sm:h-20 sm:w-40"
+              className="h-14 sm:h-16 w-auto object-contain drop-shadow-md"
             />
           </button>
 
@@ -57,7 +57,7 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
 
           <div className="hidden md:flex items-center space-x-5">
             <a
-              href="tel:+234"
+              href="tel:+2348140192298"
               className="flex items-center space-x-2 text-white/85 hover:text-[#f4c430] transition-colors"
             >
               <Phone size={20} />
@@ -75,6 +75,7 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
           <button
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -99,7 +100,7 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
             ))}
             <button
               onClick={() => handleClick('order')}
-              className="w-full bg-[#f4c430] text-[#0b0b0a] hover:bg-[#ffd95a] text-white px-6 py-3 rounded-full font-semibold mt-4"
+              className="w-full bg-[#f4c430] text-[#0b0b0a] hover:bg-[#ffd95a] px-6 py-3 rounded-full font-semibold mt-4 transition-all"
             >
               Order Now
             </button>
