@@ -1,5 +1,6 @@
-import { Heart, Phone, Mail, MapPin } from 'lucide-react';
+import { Heart, Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import { LOCATIONS } from './LocationMap';
 
 export default function Footer() {
   return (
@@ -67,15 +68,33 @@ export default function Footer() {
               </li>
               <li className="flex items-start text-[#b8b0a0]">
                 <MapPin size={16} className="mr-2 text-[#f4c430] mt-1 shrink-0" />
-                <div className="space-y-1.5">
-                  <p>
-                    <span className="text-[#f4c430] font-medium block">Lagos:</span>
-                    4, Prince Adeleke Close, Ikosi Ketu, Lagos
-                  </p>
-                  <p>
-                    <span className="text-[#f4c430] font-medium block">Ile-Ife:</span>
-                    Solar close, Mayfair Roundabout, Mayfair, Ile Ife, Osun State
-                  </p>
+                <div className="space-y-2">
+                  <div>
+                    <span className="text-[#f4c430] font-medium block text-xs uppercase tracking-wider">Lagos:</span>
+                    <a
+                      href={LOCATIONS[0].googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#f4c430] transition-colors inline-flex items-center gap-1 group"
+                      title="View Lagos branch on Google Maps"
+                    >
+                      <span>4, Prince Adeleke Close, Ikosi Ketu, Lagos</span>
+                      <ExternalLink size={12} className="opacity-70 group-hover:opacity-100 text-[#f4c430] shrink-0" />
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-[#f4c430] font-medium block text-xs uppercase tracking-wider">Ile-Ife:</span>
+                    <a
+                      href={LOCATIONS[1].googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#f4c430] transition-colors inline-flex items-center gap-1 group"
+                      title="View Ile-Ife branch on Google Maps"
+                    >
+                      <span>Solar close, Mayfair Roundabout, Mayfair, Ile Ife, Osun State</span>
+                      <ExternalLink size={12} className="opacity-70 group-hover:opacity-100 text-[#f4c430] shrink-0" />
+                    </a>
+                  </div>
                 </div>
               </li>
             </ul>

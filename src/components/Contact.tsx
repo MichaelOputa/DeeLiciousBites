@@ -1,7 +1,8 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, ExternalLink } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import LocationMap, { LOCATIONS } from './LocationMap';
 
 export default function Contact() {
 
@@ -36,7 +37,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div className="bg-[#171715] border border-[#5f4910] rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-[#fff8e8] mb-6">Contact Information</h3>
@@ -90,19 +91,37 @@ export default function Contact() {
                   <div className="p-3 bg-[#382b0b] rounded-full shrink-0 mt-1">
                     <MapPin className="text-[#f4c430]" size={24} />
                   </div>
-                  <div className="space-y-3">
+                  <div className="space-y-4 flex-1">
                     <h4 className="font-semibold text-[#fff8e8] mb-1">Our Locations</h4>
                     <div>
-                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-0.5">Lagos Location</p>
-                      <p className="text-[#c5bdad] text-sm leading-relaxed">
-                        4, Prince Adeleke Close, Ikosi Ketu, Lagos
+                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-1">
+                        Lagos Location
                       </p>
+                      <a
+                        href={LOCATIONS[0].googleMapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-start gap-1.5 text-[#c5bdad] hover:text-[#f4c430] text-sm leading-relaxed transition-colors"
+                        title="Open Lagos address on Google Maps"
+                      >
+                        <span>4, Prince Adeleke Close, Ikosi Ketu, Lagos</span>
+                        <ExternalLink size={14} className="shrink-0 mt-0.5 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-[#f4c430]" />
+                      </a>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-0.5">Ile-Ife Location</p>
-                      <p className="text-[#c5bdad] text-sm leading-relaxed">
-                        Solar close, Mayfair Roundabout, Mayfair, Ile Ife, Osun State
+                      <p className="text-xs uppercase tracking-wider font-semibold text-[#f4c430] mb-1">
+                        Ile-Ife Location
                       </p>
+                      <a
+                        href={LOCATIONS[1].googleMapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-start gap-1.5 text-[#c5bdad] hover:text-[#f4c430] text-sm leading-relaxed transition-colors"
+                        title="Open Ile-Ife address on Google Maps"
+                      >
+                        <span>Solar close, Mayfair Roundabout, Mayfair, Ile Ife, Osun State</span>
+                        <ExternalLink size={14} className="shrink-0 mt-0.5 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-[#f4c430]" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -192,6 +211,9 @@ export default function Contact() {
             </form>
           </div>
         </div>
+
+        {/* Integrated Interactive Google Maps Section */}
+        <LocationMap />
       </div>
     </section>
   );
